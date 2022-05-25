@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --softpink: #fb3f5c;
+    --myWhite: #f8eeef;
+}
+
+html,body {
+    
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body{
+    background-image:url(./background.jpg);
+    background-size: cover;
+    background-repeat:unset;
+    background-position: center;
+    
+}
+
+.header{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.navbar {
+    padding: 18px;
+    position: fixed;
+    width: 100%;
+    background-color: #0f1956;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-family: 'Nova Mono', monospace;
+    color: #f8eeef;
+    font-weight: 400;
+}
+
+
+.menu>a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--myWhite);
+
+    
+}
+
+.Intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+
+
+.intro-text {
+    color: #FFFFFF;
+    width: 350px;
+    margin-left: 70px;
+}
+
+.intro-text>h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+.intro-text>h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+.intro-text>h2>span {
+   color: var(--softpink);
+}
+.intro-text>p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.intro-text>a {
+    background-color: var(--softpink);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    color: var(--myWhite);
+    border-radius: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.intro-image {
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+
+}
+
+@media screen and (max-width: 640px) {
+    .Intro {
+        flex-direction: column;
+    }
+    .intro-text{
+        margin-bottom: 30px;
+    }
+    .intro-image {
+        margin-left: 0;
+    }
+    .about-top{
+        flex-direction: column;
+    }
+    .about-top-image{
+        margin-right: 0;
+    }
+    .about-top-text{
+        margin-bottom: 30px;
+    }
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 30px;
+   
+}
+
+.about-top {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-top-image {
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    margin-right: 200px;
+
+}
+
+.about-top-text {
+    width: 350px;
+    color: #FFFFFF;
+}
+
+.about-top-text>h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+.about-top-text>h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.about-top-text>p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.about-top-text>button {
+    background-color: var(--softpink);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    color: var(--myWhite);
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.about-bottom {
+    
+    
+    width: 100%;
+    height: 100%;
+    
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-bottom-head{
+    
+    margin-left: 5px;
+    font-family: 'Nova Mono', monospace;
+    color: var(--softpink);
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.statistic{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+
+.statistic-image{
+    margin-top: 25px;
+    width: 150px;
+    height: 150px;
+}
+
+.statistic>p{
+    margin-top: 20px;
+    width: 300px;
+    
+}
+
+.statistic>h4{
+    margin-left: 5px;
+}
+
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #0f1956;
+    padding: 20px;
+}
+
+
+.contact {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
+
+.contact-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px ;
+}
+
+
+.contact-top>svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--myWhite);
+    
+}
+.contact-top>h4 {
+    color: var(--myWhite);
+}
+
+.contact-bottom>a>svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--myWhite);
+    
+}
+
+.contact-bottom>a {
+    margin-left: 15px;
+}
+
+
+
+
