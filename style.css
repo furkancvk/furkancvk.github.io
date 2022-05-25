@@ -299,6 +299,16 @@ body{
     margin-left: 15px;
 }
 
+.made {
+    margin-top: 10px;
+    color: var(--myWhite);
+}
+
+.made-1{
+    margin-left: 10px;
+}
+
+
 
 
 
